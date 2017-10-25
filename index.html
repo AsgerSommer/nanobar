@@ -20,13 +20,11 @@ Created by Asger Sommer, 2017.
             animation: fadein 2s;
 	}
 	#foo{
-    color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 0);
+    	display: none;
+
 	}
 	#foo::selection{
-    color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 1);
-    background: #B3D8FD;
+    	display: block;
 	}
 	.konamiSecret{
 		/* visibility: hidden; */
@@ -96,12 +94,14 @@ Created by Asger Sommer, 2017.
 		<div id="svar1" class="fadein"></div>
 	<div id="q">Er Nanobar Ren?</div>
 		<div id="svar2" class="fadein"></div>
-	<div>Powered by <b><a href="https://www.facebook.com/NanobarDTU/">Nanobar</a></b>'s lokaleansvarlige.</div>
-	<p>
-	<!-- Created by note, if I want to add it later :) -->
+	<div>Powered by <b><a href="https://www.facebook.com/NanobarDTU/">Nanobar</a></b>'s lokaleansvarlige.<br>Created by <b><a href="https://asgersommer.com/">Asger Sommer</a></b>.</div><br>
+	<!-- <div><p> ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️🅱️🅰️ </p></div> -->
+
+	<!-- Hidden created by note
 	<div style="/* position: relative; text-align: center */">
-      <p style="/* position: fixed; bottom: 0; width:100%; */" id="foo"> Created by <a id="foo" href="https://asgersommer.com/">Asger Sommer</a>.</p>
-    </div>
+      <p id="foo">
+      Created by <a style="font-weight: bold;" id="foo" href="https://asgersommer.com/">Asger Sommer</a>.</p>
+    </div>-->
     <!-- Konami Code -->
     <!--<p class="konamiSecret"><img src="nanomachines.jpg" alt="Nanomachines,son"></p>-->
     <div id="q" class="konamiSecret">Er Schrödinger's Kat I Live?</div>
