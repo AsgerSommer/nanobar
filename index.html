@@ -1,20 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Er Nanobar Åben?</title>
 <style>
-	#q,#svar {font-family:Verdana, Geneva, sans-serif;}
+	#q,#svar1,#svar2 {font-family:Verdana, Geneva, sans-serif;}
 	#q {font-size:x-large;}
-	#svar {font-size:xx-large;margin: 25px 25px 25px 25px;}
+	#svar1,#svar2 {font-size:xx-large;margin: 25px 25px 25px 25px;}
 	#wrapper {text-align:center;}
 </style>
 </head>
 <body>
 <div id="wrapper">
 <div id="q">Er Nanobar Åben?</div>
-<div id="svar">Ja</div>
-</div>
+<div id="svar1"></div>
+<div id="q">Er Nanobar Ren?</div>
+<div id="svar2"></div>
+<div>Powered by <a href="https://www.facebook.com/NanobarDTU/">Nanobar</a>'s lokaleansvarlige.</div>
 </body>
+<script>
+var time = new Date().getHours();
+var yesWords = ["Ja", "Yeps", "Helt klart", "Altid", "Jepper", "Tjek", "True", "Yeah", "Jep", "Yes"];
+var yesWord = yesWords[Math.floor(Math.random() * yesWords.length)];
+var noWords = ["Nej", "Næh", "Nope", "Aldrig", "Niksen biksen", "Næppe", "Helt klart ikke", "No", "Nah", "False"];
+var noWord = noWords[Math.floor(Math.random() * noWords.length)];
+if (17 < time < 08) {document.getElementById("svar1").innerHTML = yesWord + ", husk studiekort.";}
+else {document.getElementById("svar1").innerHTML = "Ja";}
+document.getElementById("svar2").innerHTML = ".." + noWord+".";
+</script>
 </html>
