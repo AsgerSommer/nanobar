@@ -1,35 +1,129 @@
+<!--
+Created by Asger Sommer, 2017.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Er Nanobar Åben?</title>
 <style>
-	#q,#svar1,#svar2 {font-family:Verdana, Geneva, sans-serif;}
+	#q,#svar1,#svar2,#svar3 {font-family:Verdana, Geneva, sans-serif;}
 	#q {font-size:x-large;}
-	#svar1,#svar2 {font-size:xx-large;margin: 25px 25px 25px 25px;}
+	#svar1,#svar2,#svar3 {font-size:xx-large;margin: 25px 25px 25px 25px;}
 	#wrapper {text-align:center;}
+	.fadein {
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+	}
+	#foo{
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0);
+	}
+	#foo::selection{
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 1);
+    background: #B3D8FD;
+	}
+	.konamiSecret{
+		/* visibility: hidden; */
+		display: none;
+	}
+	.question{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:x-large;margin: 25px 25px 25px 25px;}
+	}
+	.answer{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:xx-large;margin: 25px 25px 25px 25px;}
+
+	@keyframes fadein {
+		/* 
+		from { opacity: 0; }
+		to   { opacity: 1; } */
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+		/* 
+		from { opacity: 0; }
+		to   { opacity: 1; } */
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+		/* 
+		from { opacity: 0; }
+		to   { opacity: 1; } */
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+		/* 
+		from { opacity: 0; }
+		to   { opacity: 1; } */
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	/* Opera < 12.1 */
+	@-o-keyframes fadein {
+		/* 
+		from { opacity: 0; }
+		to   { opacity: 1; } */
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
 </style>
 </head>
 
 <body><div id="wrapper">
 	<div id="q">Er Nanobar Åben?</div>
-		<div id="svar1"></div>
+		<div id="svar1" class="fadein"></div>
 	<div id="q">Er Nanobar Ren?</div>
-		<div id="svar2"></div>
+		<div id="svar2" class="fadein"></div>
 	<div>Powered by <b><a href="https://www.facebook.com/NanobarDTU/">Nanobar</a></b>'s lokaleansvarlige.</div>
+	<p>
+	<!-- Created by note, if I want to add it later :) -->
+	<div style="/* position: relative; text-align: center */">
+      <p style="/* position: fixed; bottom: 0; width:100%; */" id="foo"> Created by <a id="foo" href="https://asgersommer.com/">Asger Sommer</a>.</p>
+    </div>
+    <!-- Konami Code -->
+    <!--<p class="konamiSecret"><img src="nanomachines.jpg" alt="Nanomachines,son"></p>-->
+    <div id="q" class="konamiSecret">Er Schrödinger's Kat I Live?</div>
+		<div id="svar3" class="konamiSecret fadein"></div>
 </body>
-	
+
+<script src="./konami.js"></script>
 <script>
 var time = new Date().getHours();
 var yesWords = ["Ja", "Yeps", "Helt klart", "Altid", "Jepper", "Tjek", "True", "Yeah", "Jep", "Yes"];
-var yesWord = yesWords[Math.floor(Math.random() * yesWords.length)];
 var noWords = ["Nej", "Næh", "Nope", "Aldrig", "Niksen biksen", "Næppe", "Helt klart ikke", "No", "Nah", "False"];
+var catAnswers = ["Ja", "Nej"];
+
+var yesWord = yesWords[Math.floor(Math.random() * yesWords.length)];
 var noWord = noWords[Math.floor(Math.random() * noWords.length)];
+var catAnswer = catAnswers[Math.floor(Math.random() * catAnswers.length)];
 
 if (17 < time < 08) {document.getElementById("svar1").innerHTML = yesWord + ", husk studiekort.";}
 else {document.getElementById("svar1").innerHTML = yesWord + ".";}
 
 document.getElementById("svar2").innerHTML = ".." + noWord+".";
+document.getElementById("svar3").innerHTML = catAnswer+".";
 </script>
 	
 </html>
