@@ -8,10 +8,15 @@ Created by Asger Sommer, 2017.
 <meta charset="utf-8">
 <title>Er Nanobar Åben?</title>
 <style>
-	#q,#svar1,#svar2,#svar3 {font-family:Verdana, Geneva, sans-serif;}
-	#q {font-size:x-large;}
-	#svar1,#svar2,#svar3 {font-size:xx-large;margin: 25px 25px 25px 25px;}
-	#wrapper {text-align:center;}
+	#q,#svar1,#svar2,#svar3 {
+		font-family:Verdana, Geneva, sans-serif;}
+	#q {
+		font-size:x-large;}
+	#svar1,#svar2,#svar3 {
+		font-size:xx-large;
+		margin: 25px 25px 25px 25px;}
+	#wrapper {
+		text-align:center;}
 	.fadein {
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -27,21 +32,10 @@ Created by Asger Sommer, 2017.
     	display: block;
 	}
 	.konamiSecret{
-		/* visibility: hidden; */
 		display: none;
 	}
-	.question{
-		font-family:Verdana, Geneva, sans-serif;
-		font-size:x-large;margin: 25px 25px 25px 25px;}
-	}
-	.answer{
-		font-family:Verdana, Geneva, sans-serif;
-		font-size:xx-large;margin: 25px 25px 25px 25px;}
 
 	@keyframes fadein {
-		/* 
-		from { opacity: 0; }
-		to   { opacity: 1; } */
 		0% {opacity: 0;}
 		30% {opacity: 0;}
 		100% {opacity: 1;}
@@ -49,9 +43,6 @@ Created by Asger Sommer, 2017.
 
 	/* Firefox < 16 */
 	@-moz-keyframes fadein {
-		/* 
-		from { opacity: 0; }
-		to   { opacity: 1; } */
 		0% {opacity: 0;}
 		30% {opacity: 0;}
 		100% {opacity: 1;}
@@ -59,9 +50,6 @@ Created by Asger Sommer, 2017.
 
 	/* Safari, Chrome and Opera > 12.1 */
 	@-webkit-keyframes fadein {
-		/* 
-		from { opacity: 0; }
-		to   { opacity: 1; } */
 		0% {opacity: 0;}
 		30% {opacity: 0;}
 		100% {opacity: 1;}
@@ -69,9 +57,6 @@ Created by Asger Sommer, 2017.
 
 	/* Internet Explorer */
 	@-ms-keyframes fadein {
-		/* 
-		from { opacity: 0; }
-		to   { opacity: 1; } */
 		0% {opacity: 0;}
 		30% {opacity: 0;}
 		100% {opacity: 1;}
@@ -79,9 +64,6 @@ Created by Asger Sommer, 2017.
 
 	/* Opera < 12.1 */
 	@-o-keyframes fadein {
-		/* 
-		from { opacity: 0; }
-		to   { opacity: 1; } */
 		0% {opacity: 0;}
 		30% {opacity: 0;}
 		100% {opacity: 1;}
@@ -95,15 +77,6 @@ Created by Asger Sommer, 2017.
 	<div id="q">Er Nanobar Ren?</div>
 		<div id="svar2" class="fadein"></div>
 	<div>Powered by <b><a href="https://www.facebook.com/NanobarDTU/">Nanobar</a></b>'s lokaleansvarlige.<br>Created by <b><a href="https://asgersommer.com/">Asger Sommer</a></b>.</div><br>
-	<!-- <div><p> ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️🅱️🅰️ </p></div> -->
-
-	<!-- Hidden created by note
-	<div style="/* position: relative; text-align: center */">
-      <p id="foo">
-      Created by <a style="font-weight: bold;" id="foo" href="https://asgersommer.com/">Asger Sommer</a>.</p>
-    </div>-->
-    <!-- Konami Code -->
-    <!--<p class="konamiSecret"><img src="nanomachines.jpg" alt="Nanomachines,son"></p>-->
     <div id="q" class="konamiSecret">Er Schrödingers Kat I Live?</div>
 		<div id="svar3" class="konamiSecret fadein"></div>
 </body>
