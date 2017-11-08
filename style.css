@@ -14,16 +14,12 @@
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
 }
-#foo{
-    display: none;
-
-}
-#foo::selection{
-    display: block;
-}
 .konamiSecret{
     display: none;
 }
+.center{text-align:center;}
+
+div {text-align:center;}
 
 @keyframes fadein {
     0% {opacity: 0;}
