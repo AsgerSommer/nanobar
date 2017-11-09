@@ -20,5 +20,8 @@ else {document.getElementById("svar1").innerHTML = yesWord1 + ".";}
 
 // document.getElementById("svar2").innerHTML = ".." + noWord+".";
 if (cleanDays <= 180) {document.getElementById("svar2").innerHTML = yesWord2 + ", det er den faktisk!" ;}
-else {document.getElementById("svar2").innerHTML = noWord + ", men det var den for " + cleanDays + " dage siden." ;}
-document.getElementById("svar3").innerHTML = catAnswer+".";
+else {document.getElementById("svar2").innerHTML = noWord + ".";}
+document.getElementById("svar3").innerHTML = catAnswer + ".";
+document.getElementById("q2").innerHTML = "Dage siden sidste rengøring: " + cleanDays;
+
+
