@@ -25,7 +25,7 @@ else {document.getElementById("svar1").innerHTML = yesWord1 + ".";}
 // if (cleanDays <= 180) {document.getElementById("svar2").innerHTML = yesWord2 + ", det er den faktisk!" ;}
 // else {document.getElementById("svar2").innerHTML = noWord + ".";}
 document.getElementById("svar3").innerHTML = catAnswer + ".";
-document.getElementById("q2").innerHTML = "Dage siden sidste rengøring: " + cleanDays;
+document.getElementById("q2").innerHTML = "Dage siden sidste hovedrengøring: " + cleanDays;
 document.getElementById("q3").innerHTML = "Dage til elektro-dommedag: " + doomDays;
 
 
