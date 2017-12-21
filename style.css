@@ -7,6 +7,13 @@
     margin: 25px 25px 25px 25px;}
 #wrapper {
     text-align:center;}
+.fadein1 {
+-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+     -o-animation: fadein 1s; /* Opera < 12.1 */
+        animation: fadein 1s;
+}
 .fadein2 {
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -20,13 +27,6 @@
     -ms-animation: fadein 3s; /* Internet Explorer */
      -o-animation: fadein 3s; /* Opera < 12.1 */
         animation: fadein 3s;
-}
-.fadein4 {
--webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 4s; /* Firefox < 16 */
-    -ms-animation: fadein 4s; /* Internet Explorer */
-     -o-animation: fadein 4s; /* Opera < 12.1 */
-        animation: fadein 4s;
 }
 .konamiSecret{
     display: none;
