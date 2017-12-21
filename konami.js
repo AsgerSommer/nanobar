@@ -41,8 +41,7 @@ function activateCheats() {
   // alert("cheats activated");
 
   var elems = document.getElementsByClassName('konamiSecret');
-  elems[0].style.display = 'block';
-  elems[1].style.display = 'block';
+  for (i = 0; i < elems.length; i++) { elems[i].style.display = 'block'; }
 
   // var audio = new Audio('./nanomachines.mp3');
   // audio.play();
