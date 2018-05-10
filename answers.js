@@ -2,11 +2,11 @@ var date = new Date();
 var dato = date.getDay();
 var time = date.getHours()*100 + date.getMinutes();
 
-var cleanDay = new Date(2017,10,08);
+var cleanDay = new Date(2017,10,8);
 var cleanDiff = date - cleanDay;
 var cleanDays = Math.floor(cleanDiff/(60*60*1000*24)*1);
 
-var doomsDay = new Date(2017,11,20);
+var doomsDay = new Date(2018,5,25);
 var doomDiff = date - doomsDay;
 var doomDays = -Math.floor(doomDiff/(60*60*1000*24)*1);
 
@@ -27,6 +27,7 @@ else {document.getElementById("svar1").innerHTML = yesWord1 + ".";}
 // if (cleanDays <= 180) {document.getElementById("svar2").innerHTML = yesWord2 + ", det er den faktisk!" ;}
 // else {document.getElementById("svar2").innerHTML = noWord + ".";}
 document.getElementById("svar3").innerHTML = catAnswer + ".";
+document.getElementById("q3").innerHTML = "Dage til at vi mister Nanobar: " + doomDays + ".";
 document.getElementById("q2").innerHTML = "Dage siden sidste hovedrengøring: " + cleanDays;
 // document.getElementById("q3").innerHTML = "Dage til elektro-dommedag: " + doomDays;
 
