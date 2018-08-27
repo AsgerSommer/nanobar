@@ -19,22 +19,15 @@ var cleanDay = new Date(2017,10,8);
 var cleanDiff = date - cleanDay;
 var cleanDays = Math.floor(cleanDiff/(60*60*1000*24)*1);
 
-var doomsDay = new Date(2018,5,25);
-var doomDiff = date - doomsDay;
-var doomDays = -Math.floor(doomDiff/(60*60*1000*24)*1);
-
 // say if Nanobar is open
-if ((date - doomsDay) >= 0) {document.getElementById("svar1").innerHTML = noWord + ", men den genopstår i Picobar!";}
-else if (dato == 0 || dato == 6) {document.getElementById("svar1").innerHTML = yesWord1 + ", husk studiekort i weekenden.";}
-else if (1700 <= time || time <= 700) {document.getElementById("svar1").innerHTML = yesWord1 + ", husk studiekort efter kl. 17.";}
-else {document.getElementById("svar1").innerHTML = yesWord1 + ".";}
+if (dato == 0 || dato == 6) {document.getElementById("svar1").innerHTML = yesWord1 
+	+ ", og helt nyrenoveret!" + "<br><small> Bare husk studiekort i weekenden.</small>";}
+else if (1700 <= time || time <= 700) {document.getElementById("svar1").innerHTML = yesWord1 
+	+ ", og helt nyrenoveret!" + "<br><small> Bare husk studiekort efter kl. 17.</small>";}
+else {document.getElementById("svar1").innerHTML = yesWord1 + ", og helt nyrenoveret!";}
 
 // tell days since cleaning
-document.getElementById("q2").innerHTML = "Dage siden sidste hovedrengøring: " + cleanDays;
-
-// tell days until Nanobar is closed (for now)
-if (doomDays > 0) {document.getElementById("q3").innerHTML = "Dage til at Nanobar lukker (for nu): " + doomDays + ".";}
-else {document.getElementById("q3").remove();}
+// document.getElementById("q2").innerHTML = "Dage siden sidste hovedrengøring: " + cleanDays;
 
 // solve quantum mechanics
 document.getElementById("svar3").innerHTML = catAnswer + ".";
