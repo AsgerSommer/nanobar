@@ -29,8 +29,6 @@ else if (1700 <= time || time <= 700) {document.getElementById("svar1").innerHTM
 	+ extra + "<br><small>Bare husk studiekort efter kl. 17.</small>";}
 else {document.getElementById("svar1").innerHTML = yesWord1 + extra;}
 
-
-
 // tell days since cleaning
 // document.getElementById("q2").innerHTML = "Dage siden sidste hovedrengøring: " + cleanDays;
 
