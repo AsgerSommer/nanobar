@@ -1,3 +1,11 @@
+/* CSS fade in code sourced from: https://stackoverflow.com/a/11681331 
+license: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+attribution (multiple, see: https://stackoverflow.com/posts/11681331/timeline): 
+- https://stackoverflow.com/users/900747/a-m-k
+- https://stackoverflow.com/users/250076/luna
+- https://stackoverflow.com/users/63550/peter-mortensen
+*/
+
 small { 
     font-size: x-large;
 }

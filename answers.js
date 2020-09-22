@@ -3,7 +3,7 @@ var yesWords = ["Ja", "Yeps", "Helt klart", "Jepper", "Tjek", "True", "Yeah", "J
 var noWords = ["Nej", "Næh", "Nope", "Niksen biksen", "Næppe", "Helt klart ikke", "No", "Nah", "False"];
 var catAnswers = ["Ja", "Nej"];
 
-// chose the words... carefully
+// chose the words
 var yesWord1 = yesWords[Math.floor(Math.random() * yesWords.length)];
 var yesWord2 = yesWords[Math.floor(Math.random() * yesWords.length)];
 var noWord = noWords[Math.floor(Math.random() * noWords.length)];

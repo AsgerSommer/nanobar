@@ -1,3 +1,7 @@
+// konami code detector sourced from: https://stackoverflow.com/a/31627191
+// license: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+// attribution: w.stoettinger (https://stackoverflow.com/users/5095697/w-stoettinger)
+
 // a key map of allowed keys
 var allowedKeys = {
   37: 'left',
